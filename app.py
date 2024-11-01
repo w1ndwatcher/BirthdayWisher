@@ -25,4 +25,4 @@ def cake():
     return render_template("home.html",username=username,age=age)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0",port=int(os.getenv("PORT", 5000)))

@@ -85,7 +85,7 @@
                     const volume = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
 
                     // Set a threshold volume to detect blowing sound
-                    if (volume > 50) { // Adjust this value as needed
+                    if (volume > 40) { // Adjust this value as needed
                         extinguishCandles();
                         bdaySong.play();
                         clearInterval(detectionInterval); // Stop detection after blowing
